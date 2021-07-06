@@ -42,15 +42,15 @@
             color: white;
             list-style: none;
             display: inline-block;
-            margin-right: 20px;
+            margin-right: 5px;
             margin-top: 20px;
 
         }
 
         .navbar ul li a{
             color: #fff;
-            font-weight: 600;
-            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            font-family: sans-serif;
             text-decoration: none;
             padding: 8px 12px;
             
@@ -99,12 +99,12 @@
         }
         #btn1{
             background-color: #fff;
-            color: rgb(20, 231, 20);
+            color:#a3c962;
             border: 2px solid #fff;
             border-radius: 25px;
-            padding: 8px 20px;
+            padding: 10px 20px;
             font-size: 15px;
-            margin-right: 15px;
+            margin-right: 22px;
             margin-top: 5%;
             letter-spacing: 2px;
            
@@ -115,7 +115,7 @@
             color: #fff;
             border: 2px solid #fff;
             border-radius: 25px;
-            padding: 8px 20px;
+            padding: 10px 20px;
             font-size: 15px;
             margin-top: 5%;
             letter-spacing: 1px;
@@ -251,8 +251,9 @@
         }
         .num .percent  circle:nth-child(2){
             stroke-dashoffset: calc(440 - (440 *90) / 100);
-            stroke:#049dff
+            
         }
+        
     
         .num .percent .number, .number1, .number2{
             position: absolute;
@@ -409,12 +410,12 @@
         /* Gallery */
         .work{
             display: flex;
-            margin-left: 35%;
+            margin-left: 30%;
             text-align:center ;
-            padding-top: 65px;
+            padding-top: 80px;
         }
         .work h1{
-            font-size: 25px;
+            font-size: 24px;
             color: #a3c962;
             text-align-last: right;
         
@@ -432,7 +433,7 @@
             margin-top: 10px;
             font-weight:lighter;
             text-align-last: left;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
 
         }
         /* Image display */
@@ -460,13 +461,15 @@
             
        }
        
-
        .forms {
            display: flex;
            padding-top: 80px;
            text-align: center;
            justify-content: space-evenly;
           
+       }
+       .form .fa{
+           background-color: #fff;
        }
 
        .forms h1{
@@ -486,6 +489,7 @@
        
        
        /* Our features */
+       /* Headline */
         .features{
             display: flex;
             margin-left: 270px;
@@ -516,6 +520,7 @@
             letter-spacing: 2px;
         
         }
+        /* description */
         .planting{
             display: flex;
             justify-content:space-evenly;
@@ -530,6 +535,7 @@
             box-shadow:3px 7px 39px -5px rgb(0 0 0);
             margin-bottom: 15px;
             padding-bottom: 10px;
+            justify-content: center;
             text-align: center;
             text-align-last: left;
         }
@@ -547,6 +553,7 @@
             font-size: 14px;
             margin-left: 38%;
             letter-spacing: 1px;
+        
 
         }
         /* Plans and Prices */
@@ -979,81 +986,26 @@
             text-align-last: left;
         }
         /* Contact Form */
-        .form{
-            display: flex;
-            margin-left: 270px;
-            text-align: center;
-            padding: 60px;
-        }
-
-        /* Map direction */
-        .map{
-            border: 1px solid #dee2e6;
-            border-radius: .4rem;
-            height: auto;        
-            padding: 4px;
-            }
-        .map iframe{
-            width: 100%;
-            height: 50vh;
-            max-width: 100%;
-            touch-action: pan-x pan-y;
-        }
-        /* Ending */
-        .final{
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            height: 25vh;
-            background-color:#a3c962 ;
-            margin-top: 3px;
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            
-        }
-
-        .final h1{
-            color: #fff;
-            font-size: 16px;
-            padding-top: 20px;
-            letter-spacing: 2px;
-            font-weight: 400;
-
-        }
-        .final i{
-            padding-top: 20px;
-            align-items: center;
-            margin-left: 20%;
-        
-
-
-        }
-
         .info2{
             width: 80%;
             margin: auto;
         }
-        /* contact */
         .form1{
             margin-top: 5%;
             display: flex;
             justify-content: space-between;
             
-            
         }
-        input ::placeholder{
-            color: #000;
-
-        }
+        
         input[type=text], textarea{
-            background-color: #efefef;;
+            background-color: #ebebeb;
             width: 100%;
-            padding: 12px 20px;
+            padding: 15px 20px;
             margin: 8px 0;
             display: inline-block;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+            border: 1px solid #ffffff;
+            border-radius: 4px ;
+            box-shadow: 0px 1px 1px 0px black;
             box-sizing: border-box;
         }
         input[type=submit] {
@@ -1070,28 +1022,40 @@
             background-color: #000;
             color: #fff;
         }
-
-        .contact{
-           flex-basis: 46%;
-           margin-bottom: 30px;
+        input[placeholder=Name]{
+            color: #000;
+            font-size: 16px;
         }
-        .contact div{
+        input[placeholder=Email]{
+            color: #000;
+            font-size: 16px;
+        }
+        input[placeholder=Phone]{
+            color: #000;
+            font-size: 16px;
+        }
+       
+
+        .contact1{
+           flex-basis: 44%;
+           margin-bottom: 30px;
+           margin-left: 10%;
+        }
+        .contact1 div{
             display: flex;
             align-items: center;
             margin-bottom: 30px;
-           
-            
+              
         }
         
-        .contact div .fa{
+        .contact1 div .fa{
             font-size: 28px;
-            margin: 5px;
+            margin-top:8%;
             margin-right: 60px;
             
 
         }
-        
-        .contact div h4{
+        .contact1 div h4{
             color:#a3c962;
             font-size:25px;
             font-weight: 800;
@@ -1099,39 +1063,63 @@
             
 
         }
-        .contact p{
+        .contact1 p{
             color: #4c4c4c;
             font-size: 14px;
-            margin-top: 10px;
+            margin-top: 0px;
             margin-left: 0;
             margin-bottom: 5px;
             letter-spacing: 1px;
             font-weight: 400;
 
         }
-
         
 
-       
-      
+        /* Map direction */
+        .map{
+            border: 1px solid #dee2e6;
+            border-radius: .4rem;
+            height: auto;        
+            padding: 4px;
+            }
+        .map iframe{
+            width: 100%;
+            height: 50vh;
+            max-width: 100%;
+            touch-action: pan-x pan-y;
+        }
+        /* Ending */
+        .footer{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 25vh;
+            background-color:#a3c962 ;
+            margin-top: 3px;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            
+        }
+
+        .footer2 p{
+            color: #fff;
+            margin-top:20px;
+            font-size: 14px;
+            letter-spacing: 2px;
+           
+
+        }
+        .footer3 i{
+            
+            padding-left: 100px;
+            cursor: pointer;
+
+        }
+        .footer4 i{
+            padding-left: 50%;
+        }
         
-
-      
-    
-
-
-        
-
-
-        
-
-        
-
-
-
-       
-        
-       
     </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -1155,17 +1143,18 @@
             <div class="navbar">
                 <ul>
                     <li class="active"> <a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#aboutus">About</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
             
         </nav>
 
         <div class="content">
+            <div id="#header"></div>
             <h2>Global Warming</h2>
             <h3>Save Forest And Save Earth</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt utadipiscing elit sed do<br/>eiusmod tempor incididunt Lorem.</p>
@@ -1177,8 +1166,9 @@
         </div>
 
     </div>
-
+<!-- About Us -->
     <div class="about">
+        <div id="aboutus"></div>
         <h1>What we do</h1>
         <h2>STANDING TOGETHER FOR A BETTER WORLD</h2>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br/>
@@ -1200,30 +1190,30 @@
                         <div class="percent">
                             <svg>
                                 <circle cx="70" cy="70" r="70"></circle>
-                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle style="stroke: #007bff;" cx="70" cy="70" r="70"></circle>
                             </svg>
                             <div class="number">
-                                <h2>90<span>%</span></h2>
+                                <h2 style="stroke: #007bff;">90<span>%</span></h2>
                             </div>
                             <h2 class="text">Save Plants</h2>
                         </div>
                         <div class="percent">
                             <svg>
                                 <circle cx="70" cy="70" r="70"></circle>
-                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle style="stroke: #28a745;" cx="70" cy="70" r="70"></circle>
                             </svg>
                             <div class="number1">
-                                <h2>80<span>%</span></h2>
+                                <h2 style="stroke: #28a745;">80<span>%</span></h2>
                             </div>
                             <h2 class="text">Planting</h2>
                         </div>
                         <div class="percent">
                             <svg>
                                 <circle cx="70" cy="70" r="70"></circle>
-                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle style="stroke:#ffc107;" cx="70" cy="70" r="70"></circle>
                             </svg>
                             <div class="number2">
-                                <h2>75<span>%</span></h2>
+                                <h2 style="stroke:#ffc107 ;">75<span>%</span></h2>
                             </div>
                             <h2 class="text">Save Trees</h2>
                         </div>
@@ -1238,8 +1228,9 @@
 
     </div>
     
-
+<!-- Services -->
    <div class="service">
+       <div id="service"></div>
        <div class="services">
            <div class="plant">
                <p id="lorem">Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br/> Adipisci a sint fugit dolores illum </p>
@@ -1251,8 +1242,7 @@
            </div>
        </div>
        
-       
-
+    
        <div class="container">
             <div class="child1">
                 <i class="fa fa-pagelines fa-3x" aria-hidden="true"></i>
@@ -1291,8 +1281,9 @@
             </div>
         </div>
    </div>
-
+<!-- Our gallery -->
    <div class="Gallery">
+       <div id="gallery"></div>
        <div class="work">
             <div class="description">
                 <h1>See our work</h1>
@@ -1325,7 +1316,7 @@
             </div>
         </div>
     </div>
-
+<!-- No of social works -->
     <div class="count">
         <div class="forms">
             <div class="Save">
@@ -1353,7 +1344,7 @@
        
     </div>
 
-
+    <!-- Our Features -->
     <div class="feature">
         <div class="features">
             <div class="hardwork">
@@ -1389,7 +1380,7 @@
                 
         </div>
      </div>
-    
+<!-- Price and Plans -->
     <div class="plan">
         <div class="plans">
             <div class="price">
@@ -1429,6 +1420,7 @@
         </div>
     
     </div>
+<!-- Our clients -->
     <div class="client">
         <div class="peoples">
             <div class="people">
@@ -1461,7 +1453,7 @@
             </div>
         
     </div>
-
+<!-- Media Icon -->
     <div class="media">
         <div class="pause">
             <div class="play">
@@ -1473,8 +1465,9 @@
         </div>
        
     </div>
-
+<!-- Our Teams -->
     <div class="volunteer">
+        <div id="team"></div>
         <div class="voluns">
             <div class="volun">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br/> eiusmod tempor incididunt ut labore</p>
@@ -1522,7 +1515,7 @@
             </div>
         </div>
         
-    
+<!-- Blogss -->
     </div>
     <div class="events">
         <div class="blog">
@@ -1566,8 +1559,10 @@
     
     </div>
 
+<!-- Contact Information -->
     <div class="info">
         <div class="touch">
+            <div id="contact"></div>
             <div class="contact">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br/> eiusmod tempor incididunt ut labore</p>
             </div>
@@ -1578,7 +1573,7 @@
         </div>
         <div class="info2">
             <div class="form1">
-                <div class="contact">
+                <div class="contact1">
                     <form action="">
                         <input type="text" placeholder="Name" required/> <br/>
                         <input type="text" placeholder="Email" required/> <br/>
@@ -1587,17 +1582,17 @@
                         <input type="submit" value="Send"> 
                     </form>
                 </div>
-                <div class="contact">
+                <div class="contact1">
 
                     <div>
-                        <i class="fa fa-home fa-lg" aria-hidden="true"></i>
+                        <i class="fa fa-home" aria-hidden="true"></i>
                         <span>
                             <h4>Address</h4><br/>
                             <p>South Brisbane,Old 4101 Australia</p>
                         </span>
                     </div>
                     <div>
-                        <i class="fa fa-phone fa-3x" aria-hidden="true"></i>
+                        <i class="fa fa-phone" aria-hidden="true"></i>
                         <span>
                             <h4>Phone</h4>
                             <p>+ 1 (234) 567 8901</p>
@@ -1606,7 +1601,7 @@
 
                     </div>
                     <div>
-                        <i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
                         <span>
                             <h4>Email</h4><br/>
                             <p>info@example.com</p>
@@ -1636,14 +1631,28 @@
         </div>
         
     </div>
-    <div class="final">
-        <div class="logo">
-            <h1>@2018 Forest. All Rights Reserved / Design by W3Layouts</h1>
-            <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
-            <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
-            <i class="fa fa-wifi fa-2x" aria-hidden="true"></i>
+    <div class="footer">
+        <div class="footer1">
+            <div class="footer2">
+                <p>© 2018 Forest. All Rights Reserved | Design by 
+                    <a href="#">W3Layouts</a>
+                </p>
+            </div>
+            <div class="footer3">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-rss"></i>
+                <i class="fa fa-vk"></i>
+            </div><br/>
+            <div class="footer4">
+                <a href="#header"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
             
+            </div>
         </div>
+        
+       
+
+        
     </div>
     
     
